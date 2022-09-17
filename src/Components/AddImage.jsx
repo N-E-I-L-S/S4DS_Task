@@ -1,6 +1,5 @@
 import Card from 'react-bootstrap/Card';
 import React from 'react'
-import Display from './Display'
 
 export default function AddImage(props) {
     const cardImgStyle ={
