@@ -6,7 +6,8 @@ import backgroundImage from "../BackgroundImage.jpg"
 export default function Display() {
 
     const [Image, setImage] = useState([])
-    const url = `http://shibe.online/api/shibes?count=50`;
+    const url = "Hey";
+    `http://shibe.online/api/shibes?count=50`;
 
     const fetchImage = async () => {
         const GetUrl = await fetch(url);
