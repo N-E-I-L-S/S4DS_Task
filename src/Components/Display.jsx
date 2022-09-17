@@ -6,8 +6,7 @@ import backgroundImage from "../BackgroundImage.jpg"
 export default function Display() {
 
     const [Image, setImage] = useState([])
-    const url = "Hey";
-    `http://shibe.online/api/shibes?count=50`;
+    const url = `http://shibe.online/api/shibes?count=50`;
 
     const fetchImage = async () => {
         const GetUrl = await fetch(url);
@@ -17,6 +16,7 @@ export default function Display() {
 
     useEffect(() => {
         fetchImage();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
